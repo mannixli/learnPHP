@@ -1,0 +1,5 @@
+https://segmentfault.com/a/1190000012203213
+
+通过spl_autoload_register注册自动加载函数，会在Zend引擎中维护一个autoload队列，即可添加多个autoload函数，
+并在PHP调用当前文件未知的类时，触发autoload_func的调用。
+当传入的方法不可调用时，若实现spl_autoload 也会被注册到autoload队列中。

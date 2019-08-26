@@ -7,12 +7,14 @@
  *       Copyright (c) 2019, Baidu.com All Rights Reserved
  */
 
-//print "aa".strval(3);
-$aa = "{\"description\":\"测试测试\"}";
-var_dump($aa);
-var_dump(substr($aa,16,-2));
-$bb = stripslashes($aa);
-var_dump($bb);
-$cc = json_decode($bb,true);
-print_r($cc);
-var_dump($cc['description']);
+
+$info1 = memory_get_usage();
+$info2 = memory_get_peak_usage();
+//var_dump($info1/(8*1014*1024));
+//var_dump($info2/(8*1014*1024));
+
+$map = array(
+    'a'=>1,
+    'b'=>2
+);
+print_r($map['']);

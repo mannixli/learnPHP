@@ -15,6 +15,6 @@ $info2 = memory_get_peak_usage();
 
 $map = array(
     'a'=>1,
-    'b'=>2
+    'b'=>2,
 );
-print_r($map['']);
+print_r($map['c']??"ABC、"); // php7 ?? undefind index 时与false时同一返回
